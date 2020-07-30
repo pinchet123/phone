@@ -10,7 +10,6 @@ body {
     border-left:10px solid #000;
     border-radius: 25px;
     border-right: 10px solid #000;
-
 }
 main {
     width: 100%;
@@ -28,9 +27,7 @@ header {
     color : #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-
     padding: 15px 0;
-
 }
 nav.wifi {
     padding-top: 10px;
@@ -40,8 +37,6 @@ div.nav {
     width: 100%;
     display: flex;
     background-color: #fff;
-    
-
 }
 .fa-battery-three-quarters {
     color : green
@@ -49,8 +44,6 @@ div.nav {
 nav.menu {
     width: 3%;
     display: none;
-
-
 }
 nav.clock {
     width: 70%;
@@ -90,11 +83,19 @@ footer{
     padding: 15px 0;
 }
 footer .home {
-    width: 10%;
+    width: 5%;
     margin: auto;
     background-color: #000;
     border-radius: 100%;
     border: 3px solid #fff;
-    padding: 15px 0;
-    /* margin: 10px 0; */
+    padding: 10px 0;
+    padding: 10px;
+    height: 30%;
+}
+.home .home-item{
+    
+    border: 1px solid rgb(179, 173, 173);
+    width: 50%;
+    margin: auto;
+    height: 90%;
 }
