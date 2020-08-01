@@ -4,22 +4,29 @@
 }
 body {
     width: 375px;
-    margin: 5% auto;
-    height: 550px;
+    margin: 2% auto;
+    height: 745px;
     position: relative;
     border-left:10px solid #000;
     border-radius: 25px;
     border-right: 10px solid #000;
 }
+/* fix body chuẩn kick thước điện thoại */
 main {
     width: 100%;
-    height: 80%;
+    height: 87%;
     background-image: url(../img/bg.png);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* main 
+chiểu rộng 100% ăn theo body
+background repeat : no repeat không lặp lại background
+background-position : center chuẩn ở giữa
+background-size: cover; đúng với kick thước hình ảnh
+ */
 header {
     width: 100%;
     height: 30px;
@@ -98,4 +105,67 @@ footer .home {
     width: 50%;
     margin: auto;
     height: 90%;
+}
+
+div.main {
+    width: 100%;
+    height: 100%;
+}
+ p.out {
+    
+    color: #ff1100;
+    display: none;
+    position: absolute;
+    top : 102px;
+    right: 0;
+}
+div.main_item {
+    width: 80%;
+    margin: 10% auto;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px  #fff;
+    height: 72%;
+    border-radius: 15px;
+  
+}
+div.wrap-main {
+    display: flex;
+    width: 100%;
+   flex-wrap: wrap;
+   margin: auto;
+   margin: 10px 35px;
+}
+div.main_item-game {
+    width: 30%;
+    margin: 0 10px;
+
+}
+div.main_item-game p {
+    width: 100%;
+    text-shadow: 2px 1px #ffff; 
+    padding: 5px 0;
+    font-weight: 600;
+}
+div.game {
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 2px 2px 5px  #fff;
+    border : 3px solid #fff;
+    border-radius: 15px;
+    
+   
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    padding: 0;
+    margin: 0;
+    /* height: 60px; */
+}
+iframe {
+    /* z-index: 999999; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
