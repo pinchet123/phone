@@ -1,0 +1,112 @@
+@charset "utf-8";
+body {
+    width: 365px;
+    text-align: center;
+    height: 645px;
+    margin: 5% auto;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#bgr {
+    background-image: url('../Images/bgr.png');
+    background-repeat: space;
+    z-index: -900;
+    background-size: cover;
+    width: 100%;
+}
+
+#divmain {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    /* overflow: hidden; */
+    display: none;
+    margin: auto;
+}
+
+#divcontrol {
+    width: 70%;
+    height: 500px;
+    background-color: #FFF;
+    margin-top: 40px;
+    opacity: 0.7;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+}
+
+#imgPlayer {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url('../Images/Opng.png');
+    background-repeat: round;
+    background-color: #CCC;
+}
+
+#divcheckbox {
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#pgrTime {
+    /* margin-left: 10px; */
+    margin-top: 14px;
+    width: 30%;
+    height: 14px;
+    background-color: #3F6;
+    margin: auto;
+}
+
+.square {
+    width: 25px;
+    height: 25px;
+    font-size: 9px;
+    border-right: #000 2px solid;
+    border-top: #000 1px solid;
+    background-color: #FFF;
+    background-repeat: round;
+    overflow: hidden;
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+#label1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+#label2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-family: "Arial Black", Gadget, sans-serif;
+    background-color: #99F;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+#reload {
+    display: none;
+    margin-top: 10px;
+}
+
+div.reload {
+    width: 50%;
+    margin: auto;
+}
