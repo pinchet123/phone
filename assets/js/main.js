@@ -12,7 +12,7 @@ var main = `<div class="main_item">
     <div class="main_item-game" id="banca" data="fish">
         <p>Bắn Cá</p>
         <div class="game">
-            <img src="assets/img/game/banca.jpg" alt="">
+            <img src="assets/img/game/banca.png" alt="">
 
         </div>
 
@@ -27,7 +27,7 @@ var main = `<div class="main_item">
     <div class="main_item-game">
         <p>flappy bird</p>
         <div class="game">
-            <img src="assets/img/game/bird.jpg" alt="">
+            <img src="assets/img/game/bird.png" alt="">
         </div>
 
     </div>
