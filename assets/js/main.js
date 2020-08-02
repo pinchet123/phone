@@ -55,7 +55,7 @@ function get_game() {
 $(document).on('click', '.main_item-game', function() {
     var game = $(this).attr('data');
     var iframe = `<iframe src="iframe/${game}/index.html" frameborder="0"></iframe>`
-
+    $('.main_footer').css('display', 'none')
     $('.out').css('display', 'block')
         // $('div.main_item').css('height', '100%');
     $('.main').html(iframe)
@@ -66,38 +66,60 @@ $('.out').click(function() {
     $('.main').html(main_item)
         // $('.wrap-main').append(main_item_game)
     $(this).css('display', 'none')
+    $('.main_footer').css('display', 'block')
+    $('.main_footer').css('display', 'flex')
+
     get_game()
 })
 
-
+get_game()
 var data = [];
 var input = $('input')
 var number = ""
 
-function call() {
-    var num = $('p.num_value');
-    num.click(function() {
-        data.push($(this).text())
-        number = data.join('')
-        input.val(number)
-        console.log(number)
+var result_number = null
 
 
-    })
-    $('#delete_number').click(function() {
+var num = $('p.num_value');
+num.click(function() {
+    data.push($(this).text())
+    number = data.join('')
+    input.val(number)
+    result_number = number
+
+})
+$('#delete_number').click(function() {
+
+    if (data.length > 0) {
+        number = number.split('')
+    }
+    number = data.pop()
+    num = data.join('')
+    input.val(num)
+    result_number = num
+})
+$('#call_now').click(function(e) {
 
 
-        if (data.length > 0) {
-            number = number.split('')
-            console.log(typeof number)
-            number = data.pop()
-            var num = data.join('')
-        }
+    if (result_number == null) {
+        alert('mời bạn nhập số để gọi');
+    }
+    $(this).attr('href', `tel:${result_number}`)
+    $(this).click
+})
+$('img[data = call]').click(function() {
+    $('div.phone').css('display', 'block');
+})
+$('.home').click(function() {
+    $('div.phone').css('display', 'none');
+    $('div.main').css('display', 'none');
+    $('.main_footer').css('display', 'block')
+    $('.main_footer').css('display', 'flex')
 
-        input.val(num)
+})
+$('img[data = game]').click(function() {
+    $('div.main').css('display', 'block');
+    $('div.phone').css('display', 'none');
+    $('.main_footer').css('display', 'none')
 
-
-    })
-
-}
-call()
+})
