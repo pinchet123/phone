@@ -4,7 +4,7 @@
 }
 
 body {
-    width: 300px;
+    width: 275px;
     margin: 2% auto;
     height: 700px;
     position: relative;
@@ -149,7 +149,7 @@ div.wrap-main {
     width: 100%;
     flex-wrap: wrap;
     margin: auto;
-    margin: 10px 35px;
+    margin: 10px 25px;
 }
 
 div.main_item-game {
