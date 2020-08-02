@@ -10,13 +10,13 @@ setTime = setInterval(function() {
     // clock
 var new_game = {
         "fish": [
-            { "name": "fish", "image": 'banca.png' },
+            { "name": "fish", "image": 'banca.png' , 'title' : 'Bắn cá'},
         ],
         "caro": [
-            { "name": "caro", "image": 'caro.png' },
+            { "name": "caro", "image": 'caro.png' , 'title' : 'Cờ caro'},
         ],
         "bird": [
-            { "name": "bird", "image": 'bird.png' },
+            { "name": "bird", "image": 'bird.png' , 'title' : 'Flappy Bird'},
         ]
     }
     // obj game 
@@ -39,7 +39,7 @@ function get_game() {
             main_item_game = `
            
                     <div class="main_item-game" id="banca" data="${game_array[i].name}">
-                        <p>Bắn Cá</p>
+                        <p>${game_array[i].title}</p>
                         <div class="game">
                             <img src="assets/img/game/${game_array[i].image}" alt="">
                     </div>
